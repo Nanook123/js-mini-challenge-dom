@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="data.js"></script>
-  <script src="index.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="index.js"></script>
   <style>
     img {
       height: 300px;
@@ -15,7 +15,12 @@
 <body>
   <h1 id="header">Welcome to Ian's Liverpool FC Fan Club</h1>
   <div class="player-container">
-    <!--  -->
+    <div class="player" data-number="(Player Number)">
+      <h3>
+        {player name} (<em>{player nickname}</em>)
+      </h3>
+      <img src="{player image}" alt="{player name}">
+    </div>
   </div>
 </body>
 </html>
